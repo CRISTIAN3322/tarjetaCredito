@@ -9,20 +9,37 @@
     <title>Formulario Tarjeta de Credito</title>
   </head>
   <body>
-    <main class="tarjeta">
-
+    <main class="main">
+        <section class="tarjeta" id="tarjeta">
+            <div class="tarjeta__delantera">
+                <div class="tarjeta__delantera-marca">
+                    <img src="./assets/logos/visa.png" alt="Logo tipo de la marca de tarjeta">
+                </div>
+                <img src="./assets/chip-tarjeta.png" alt="chip tarjeta" class="tarjeta__delantera-chip">
+            </div>
+            <div class="tarjeta__datos">
+                <div class="tarjeta__datos-grupo" id="numero">
+                    <p class="label">Número Tarjeta</p>
+                    <p class="numero">#### #### #### ####</p>
+                </div>
+            </div>
+            <div class="tarjeta__flexbox">
+                <div class="tarjeta__datos-grupo" id="nombre">
+                    <p class="label">Nombre Tarjeta</p>
+                    <p class="nombre">Jon Doe</p>
+                </div>
+                <div class="tarjeta__datos-grupo" id="expiracion">
+                    <p class="label">Expiracion</p>
+                    <p class="expiracion"> <span class="mes">MM</span> / <span class="year">AA</span></p>
+                </div>
+            </div>
+        </section>       
     </main>
 
     <!-- * Vinculación Javascript -->
     <script src="./js/main.js"></script>
     <!-- * Vinculación IONICONS-->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
