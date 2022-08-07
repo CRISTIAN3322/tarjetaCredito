@@ -4,6 +4,8 @@ Proyecto realizado con HTML - CSS - JAVASCRIPT utilizado metolodologia BEM
 
 ## RECURSOS
 
+## FUENTES:
+
 ### Fuentes Principal
 Fuente lato : [Fuente Lato](https://fonts.google.com/specimen/Lato?query=lato)
 
@@ -16,3 +18,8 @@ Fuente Liu Jian Mao Cao : [Fuente Liu Jian Mao Cao](https://fonts.google.com/spe
 #### Font Family
 font-family: 'Lato', sans-serif;<br>
 font-family: 'Liu Jian Mao Cao', cursive;
+
+### COLOR:
+Color Fondo: hsl(207, 84%, 93%)
+color Texto: hsl(0, 0%, 100%)
+color label: hsl(209, 10%, 54%)
