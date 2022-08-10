@@ -10,37 +10,71 @@
   </head>
   <body>
     <main class="main">
-        <section class="tarjeta" id="tarjeta">
-            <div class="tarjeta__delantera">
-                <div class="tarjeta__delantera-marca">
-                    <img src="./assets/logos/visa.png" alt="Logo tipo de la marca de tarjeta">
-                </div>
-                <img src="./assets/chip-tarjeta.png" alt="chip tarjeta" class="tarjeta__delantera-chip">
-                <div class="tarjeta__datos">
-                    <div class="tarjeta__datos-grupo" id="numero">
-                        <p class="tarjeta__label">Número Tarjeta</p>
-                        <p class="tarjeta__label--numero">#### #### #### ####</p>
-                    </div>
-                </div>
-                <div class="tarjeta__flexbox">
-                    <div class="tarjeta__datos-grupo" id="nombre">
-                        <p class="tarjeta__label">Nombre Tarjeta</p>
-                        <p class="tarjeta__label--nombre">Jon Doe</p>
-                    </div>
-                    <div class="tarjeta__datos-grupo" id="expiracion">
-                        <p class="tarjeta__label">Expiracion</p>
-                        <p class="tarjeta__label--expiracion"> <span class="mes">MM</span> / <span class="year">AA</span></p>
-                    </div>
-                </div>
+      <section class="tarjeta" id="tarjeta">
+        <div class="tarjeta__delantera">
+          <div class="tarjeta__delantera-marca">
+            <img
+              src="./assets/logos/visa.png"
+              alt="Logo tipo de la marca de tarjeta"
+            />
+          </div>
+          <img
+            src="./assets/chip-tarjeta.png"
+            alt="chip tarjeta"
+            class="tarjeta__delantera-chip"
+          />
+          <div class="tarjeta__datos">
+            <div class="tarjeta__datos-grupo" id="numero">
+              <p class="tarjeta__label">Número Tarjeta</p>
+              <p class="tarjeta__label--numero">#### #### #### ####</p>
             </div>
-            <div class="tarjeta__trasera"></div>
-        </section>       
+          </div>
+          <div class="tarjeta__flexbox">
+            <div class="tarjeta__datos-grupo" id="nombre">
+              <p class="tarjeta__label">Nombre Tarjeta</p>
+              <p class="tarjeta__label--nombre">Jon Doe</p>
+            </div>
+            <div class="tarjeta__datos-grupo" id="expiracion">
+              <p class="tarjeta__label">Expiracion</p>
+              <p class="tarjeta__label--expiracion">
+                <span class="mes">MM</span> / <span class="year">AA</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tarjeta__trasera">
+          <div class="tarjeta__trasera-barra"></div>
+            <div class="tarjeta__trasera-datos">
+
+              <div class="tarjeta__datos-grupo" id="firma">
+                <p class="tarjeta__trasera-label">Firma</p>
+                <div class="tarjeta__firma"><p>Cristian Poveda</p></div>
+              </div>
+
+              <div class="tarjeta__datos-grupo" id="ccv">
+                <p class="tarjeta__trasera-label">CCV</p>
+                <p class="tarjeta__ccv">445</p>
+              </div>
+
+            </div>          
+          <p class="leyenda">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, in?
+          </p>
+          <a href="#" class="link__banco">www.bancolombia.com</a>
+        </div>
+      </section>
     </main>
 
     <!-- * Vinculación Javascript -->
     <script src="./js/main.js"></script>
     <!-- * Vinculación IONICONS-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
