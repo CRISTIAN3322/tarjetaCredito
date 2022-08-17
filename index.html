@@ -10,59 +10,98 @@
   </head>
   <body>
     <main class="main">
+
+      <!-- TODO: Tarjeta -->
       <section class="tarjeta" id="tarjeta">
+
+        <!-- * Parte Frontal -->
+        
         <div class="tarjeta__delantera">
-          <div class="tarjeta__delantera-marca">
-            <img
-              src="./assets/logos/visa.png"
-              alt="Logo tipo de la marca de tarjeta"
-            />
+          <div class="tarjeta__marca" id="logoMarca">
+            <!-- <img src="./assets/logos/mastercard.png" alt="Logo tipo de la marca de tarjeta" /> -->
           </div>
-          <img
-            src="./assets/chip-tarjeta.png"
-            alt="chip tarjeta"
-            class="tarjeta__delantera-chip"
-          />
+          <img src="./assets/chip-tarjeta.png" alt="chip tarjeta" class="tarjeta__delantera-chip" />
           <div class="tarjeta__datos">
-            <div class="tarjeta__datos-grupo" id="numero">
+            <div class="tarjeta__grupo" id="numero">
               <p class="tarjeta__label">Número Tarjeta</p>
               <p class="tarjeta__label--numero">#### #### #### ####</p>
             </div>
           </div>
           <div class="tarjeta__flexbox">
-            <div class="tarjeta__datos-grupo" id="nombre">
+            <div class="tarjeta__grupo" id="nombre">
               <p class="tarjeta__label">Nombre Tarjeta</p>
               <p class="tarjeta__label--nombre">Jon Doe</p>
             </div>
-            <div class="tarjeta__datos-grupo" id="expiracion">
-              <p class="tarjeta__label">Expiracion</p>
-              <p class="tarjeta__label--expiracion">
-                <span class="mes">MM</span> / <span class="year">AA</span>
-              </p>
+            <div class="tarjeta__grupo" id="expiracion">
+              <p class="tarjeta__label">Expiración</p>
+              <p class="tarjeta__label--expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
             </div>
           </div>
-        </div>
+        </div> 
+
+        <!-- * Parte Trasera -->
+
         <div class="tarjeta__trasera">
           <div class="tarjeta__trasera-barra"></div>
-            <div class="tarjeta__trasera-datos">
-
-              <div class="tarjeta__datos-grupo" id="firma">
-                <p class="tarjeta__trasera-label">Firma</p>
-                <div class="tarjeta__firma"><p>Cristian Poveda</p></div>
-              </div>
-
-              <div class="tarjeta__datos-grupo" id="ccv">
-                <p class="tarjeta__trasera-label">CCV</p>
-                <p class="tarjeta__ccv">445</p>
-              </div>
-
-            </div>          
-          <p class="leyenda">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, in?
-          </p>
-          <a href="#" class="link__banco">www.bancolombia.com</a>
+          <div class="tarjeta__datos">
+            <div class="tarjeta__grupo" id="firma">
+              <p class="tarjeta__label">Firma</p>
+              <div class="tarjeta__firma"><p></p></div>
+            </div>
+            <div class="tarjeta__grupo" id="ccv">
+              <p class="tarjeta__label">CCV</p>
+              <p class="tarjeta__ccv"></p>
+            </div>
+          </div>          
+          <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, in?</p>
+          <a href="#" class="link__banco">www.tubanco.com</a>
         </div>
+
       </section>
+
+      <!-- TODO: Contenedor abrir Formulario  -->
+      <div class="contenedor-btn">
+        <button class="btn-abrir-formulario" id="btn-abrir-formulario"><ion-icon name="add-outline"></ion-icon></button>
+      </div>
+
+      <!-- TODO: Formulario -->
+
+      <form action="" id="formulario-tarjeta" class="formulario-tarjeta ">
+        <div class="grupo">
+          <label for="inputNumero">Número Tarjeta</label>
+          <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+        </div>
+        <div class="grupo">
+          <label for="inputNombre">Número Tarjeta</label>
+          <input type="text" id="inputNombre" maxlength="100" autocomplete="off">
+        </div>
+        <div class="flexbox">
+          <div class="grupo expira">
+            <label for="selectMes">Expiración</label>
+            <div class="flexbox">
+              <div class="grupo-select">
+                <select name="mes" id="selectMes">
+                  <option disabled selected>Mes</option>
+                </select>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+
+              <div class="grupo-select">
+                <select name="year" id="selectYear">
+                  <option disabled selected>Año</option>
+                </select>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="grupo ccv">
+            <label for="inputCCV">CCV</label>
+            <input type="text" id="inputCCV" maxlength="3">
+          </div>
+        </div>
+        <button type="submit" class="btnEnviar">Pagar</button>
+      </form>
     </main>
 
     <!-- * Vinculación Javascript -->
